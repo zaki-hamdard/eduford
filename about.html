@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About Us</title>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="eduford_img/logo.png" alt="logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <img src="eduford_img/close.png" alt="menu" class="fa fa-times" onclick="hideMenu()">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="eduford_img/menu.png" alt="menu" class="fa fa-bars" onclick="showMenu()">
+        </nav>
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are the World's Largest University</h1>
+                <p>if you want to know a lot about us, here we are at your service. you can
+                    have any information about us. well, we are pretty friendly with our clients. 
+                </p>
+                <a href="" class="hero-btn" style="color: white; background-color: rgb(97, 16, 122);">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="eduford_img/about.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!--- footer -->
+    
+    <section class="footer" id="footer">
+        <h4>About Us</h4>
+        <p>We are an organization consists of 34 countries</p>
+        <div class="icons">
+            <a href=""><img src="eduford_img/linkedin.png" ></a>
+            <a href=""><img src="eduford_img/facebook.png" ></a>
+            <a href=""><img src="eduford_img/instagram.png"></a>
+            <p>Built by Zaki Hamdard</p>
+        </div>
+    </section>
+
+    <!--- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
